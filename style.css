@@ -1,0 +1,797 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+html, body {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 223, 14);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    /* background: linear-gradient(lightblue, aqua); */
+
+}
+nav > img {
+    padding: 1vmax;
+}
+nav h2{
+    margin-right: 60%;
+}
+nav > button {
+    padding: 1vmax 1.5vmax;
+    background-color: #00c1a2;
+    color: white;
+    font-size: 24px;
+    font-family: "Segoe UI";
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-right: 50px;
+    
+}
+nav > button:hover {
+    background-color:#008973;
+    cursor: pointer;
+}
+article {
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: aqua; */
+    display: flex;
+    text-transform: capitalize;
+    position: relative;
+    background: linear-gradient(#D6D9E0, #CCCED9, #BABECB);
+}
+.con {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+span {
+    color: #00c1a2;
+    font-style: italic;
+    font-size: 60px;
+}
+.con > h1 {
+    font: 900 68px "gilroy";
+    color: rgba(0, 0, 0, 0.826);
+}
+.con > p {
+    margin-top: 1vmax;
+    font: 400 18px "gilroy";
+    margin-left: 8vmax;
+}
+.con > p > span {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+
+}
+.ani {
+    
+margin-left: 5vmax;
+width: 50%;
+display: flex;
+flex-direction: column;
+    
+}
+.ani > form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 6vmax;
+    /* border: 10px solid #00c1a2; */
+
+
+}
+.ani > form > input {
+    padding: 1.2vmax 1vmax;
+    /* height: 50%; */
+    margin-bottom: 1vmax;
+    text-align: left;
+    border: none;
+    border-radius: 3px;
+}
+::placeholder{
+    color: silver;
+    opacity: 1.5;
+}
+.ani > button {
+    margin-left: 6vmax;
+    margin-bottom: 5vmax;
+    width: 20%;
+    padding: 1vmax 1.5vmax;
+    background-color: #00c1a2;
+    color: white;
+    font-size: 24px;
+    font-family: "Segoe UI";
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    
+    /* margin-right: 50px; */
+}
+.ani > button:hover {
+    background-color:#008973;
+    cursor: pointer;
+}
+section {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+
+}
+.iam {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side {
+    padding: 2vmax;
+    /* margin-top: 1vmax; */
+    width: 50%;
+    display: flex;
+}
+.left {
+    /* border-top: 1px solid #000; */
+    width: 80%;
+    height: 570px;
+    background-color: wheat;
+    text-align: center;
+    padding: 1vmax;
+
+}
+
+.left > h2 {
+  font-family: "gilroy";
+  font-weight: 800;
+  /* text-align: left; */
+
+
+}
+
+.left > form > input {
+    border: none;
+    margin-bottom: .5vmax;
+    width: 50%;
+    padding: .4vmax 0;
+
+}
+.left > form > .l {
+    width: 15%;
+    /* padding: .1vmax; */
+}
+.left > form > .r {
+    width: 15%;
+    /* padding: .1vmax; */
+}
+
+button {
+    cursor: pointer;
+}
+.left > button {
+    padding: 1vmax 1vmax;
+    background-color: rgb(251, 173, 105);
+    color: white;
+    font-size: 20px;
+    font-family: "gilroy";
+    border-radius: 5px;
+    font-weight: 800;
+    margin-top: .5vmax;
+    border:none
+}
+.left > button:hover {
+    border: 2px solid black;
+    /* font-size: 25px; */
+    opacity: 5;
+}
+content {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    font-family: "gilroy";
+
+}
+.cont > h1 {
+    padding: 1vmax;
+    font-family: "gilroy";
+}
+.cont > h3 {
+    color: #402379;
+    margin-bottom: 1vmax;
+    margin-left: 1vmax;
+}
+.cont {
+    width: 50%;
+    padding: 2vmax;
+}
+.cont > p {
+    font-size: 20px;
+    padding: .8vmax 0;
+    line-height: 30px;
+    margin-left: 1vmax;
+}
+.as {
+    margin-top: 10vmax;
+    width: 50%;
+    margin-right: 5vmax;
+}
+.process {
+    margin: 3vmax auto ;
+    width: 100%;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    text-align: center;
+    align-items: center;
+
+
+}
+.img1:hover {
+  transform: scale(1.2);
+  margin-top: 2vmax;
+}
+.img2:hover {
+    transform: scale(1.2);
+    margin-top: 2vmax;
+}
+.img3:hover {
+    transform: scale(1.2);
+    margin-top: 2vmax;
+}
+    
+.block {
+    width: 100%;
+    height: 50vh;
+    /* display: flex; */
+    margin: auto;
+    text-transform: capitalize;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font: 800 18px "gilroy";
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.block > h1 {
+    display: flex;
+    flex-direction: column;
+    font: 800 36px "gilroy";
+}
+.b1:hover{
+    border: 1px solid rgba(0, 0, 0, 0.449);
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.b2:hover{
+    border: 1px solid rgba(0, 0, 0, 0.444);
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.b3:hover{
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.b4:hover{
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.b5:hover{
+    border: 1px solid rgba(0, 0, 0, 0.327);
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.b1 > img {
+    margin-bottom: 1vmax;
+}
+.b2 > img {
+    margin-bottom: 1vmax;
+}
+.b3 > img {
+    margin-bottom: 1vmax;
+}
+.b4 > img {
+    margin-bottom: 1vmax;
+}
+.b5 > img {
+    margin-bottom: 1vmax;
+}
+.port {
+    margin-top: 5vmax;
+    width: 100%;
+    height: 60vh;
+    text-transform: capitalize;
+
+}
+.port > h1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "gilroy";
+    /* text-shadow: 0 0 10px black; */
+    font-size: 40px;
+    margin-bottom: 1vmax;
+
+}
+.photo {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    position: relative;
+
+}
+.port2 {
+    width: 100%;
+    height: 50vh;
+    text-transform: capitalize;
+    background-color: rgba;
+   
+}
+.photos {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    position: relative;
+}
+.grad {
+    width: 100%;
+    height: 110vh;
+   background: linear-gradient(to right bottom, rgb(175, 217, 232), rgb(244, 191, 200));
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.155);
+}
+header {
+    margin-top: 5vmax;
+    width: 100%;
+    height: 70vh;
+    /* display: flex; */
+    text-transform: capitalize;
+    align-items: center;
+    margin-bottom: 5vmax;
+
+}
+header > .s {
+    font: 900 40px "gilroy";
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    margin-bottom: 3vmax;
+}
+.art {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.round {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgba(255, 91, 91, 0.796);
+    text-align: center;
+    margin: auto;
+    align-items: flex-end;
+}
+.round:hover {
+    background-color:rgba(226, 44, 44, 0.796);
+}
+.round > p {
+    line-height: 25px;
+    text-align: center;
+    margin-top: 2vmax;
+    font-weight: 600;
+    font-family: "gilroy";
+}
+.round2 {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgba(146, 255, 78, 0.867);
+    text-align: center;
+    margin: auto;
+    align-items: flex-end;
+}
+.round2:hover {
+    background-color: rgba(94, 203, 27, 0.867); ;
+}
+.round2 > p {
+    line-height: 25px;
+    text-align: center;
+    margin-top: 2vmax;
+    font-weight: 600;
+    font-family: "gilroy";
+}
+
+.round3 {
+    line-height: 25px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgba(255, 252, 73, 0.785);
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+.round3:hover {
+    background-color: rgba(224, 221, 37, 0.785);;
+}
+.round3 > p {
+    text-align: center;
+    margin-top: 2vmax;
+    font-weight: 600;
+    font-family: "gilroy";
+}
+
+main {
+    width: 100%;
+    height: 70vh;
+    text-transform: capitalize;
+    position: relative;
+
+}
+.price {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.box1 {
+    
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    border-left: 2px solid rgba(51, 51, 51, 0.522);
+    border-right: 2px solid rgba(51, 51, 51, 0.522);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box1 > h2 {
+ margin-bottom: 3vmax;
+}
+.box1 > h1 {
+    margin-bottom: 2vmax;
+}
+.box1 > ul {
+    list-style-type: circle;
+
+ }
+ .box2 > ul {
+    list-style-type: circle;
+
+ }
+ .box3 > ul {
+    list-style-type: circle;
+
+ }
+.box1 > ul > li {
+    margin-bottom: 15px;
+}
+.box2 {
+    
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    border-right: 2px solid rgba(51, 51, 51, 0.522);
+    border-left: 2px solid rgba(51, 51, 51, 0.522);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box2 > h2 {
+ padding: 2vmax;
+}
+.box2 > h1 {
+    margin-bottom: 2vmax;
+}
+.box2 > ul > li  {
+    margin-bottom: 15px;
+}
+.box3 {
+    
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    border-left: 2px solid rgba(51, 51, 51, 0.522);
+    border-right: 2px solid rgba(51, 51, 51, 0.522);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box3 > h2 {
+ padding: 1vmax;
+}
+.box3 > h1 {
+    margin-bottom: 1.5vmax;
+}
+.box3 > h1:hover {
+    transform: scale(1.2);
+}
+.box2 > h1:hover {
+    transform: scale(1.2);
+}
+.box1 > h1:hover {
+    transform: scale(1.2);
+}
+.box3 > ul > li  {
+    margin-bottom: 15px;
+}
+.heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vmax;
+    /* justify-content: center; */
+    font-family: "gilroy";
+}
+
+.heading > p {
+    margin-top: 3vmax;
+}
+.imp {
+    width: 100%;
+    margin: auto;
+    height: 30%;
+    /* border: 2px solid black; */
+    /* border-radius: 15%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imp > h1 {
+    font: 900 40px "gilroy";
+    padding: .8vmax;
+}
+.imp > h5 {
+    font: 400 18px "gilroy";
+    line-height: 30px;
+}
+.alumni {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(0, 0, 0, 0.768);
+
+}
+.alumni1 {
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(180deg, #5399DE 0%, rgba(255, 255, 255, 0)100%);
+    position: relative; 
+    text-align: center;
+} 
+.alumni2 {
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(180deg, #5399DE 0%, rgba(255, 255, 255, 0)100%);
+    position: relative; 
+    text-align: center;
+} 
+.alumni3 {
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(180deg, #5399DE 0%, rgba(255, 255, 255, 0)100%);
+    position: relative; 
+    text-align: center;
+} 
+.text {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-top: 5vmax;
+}
+.test {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.test > h1 {
+    font: 800 34px "gilroy";
+    margin-bottom: 2vmax;
+}
+.im {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-image: url(25.06.2022_16.52.43_REC-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #569ADE ;
+    background-color: #fff;
+    position: absolute;
+    left: 37%;
+    
+
+    
+    
+}
+.im2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-image: url(25.06.2022_16.52.43_REC-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #569ADE ;
+    background-color: #fff;
+    position: absolute;
+    left: 37%;
+    
+
+}
+.im3 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-image: url(25.06.2022_16.52.43_REC-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #569ADE ;
+    background-color: #fff;
+    position: absolute;
+    left: 37%;
+    
+
+}
+.alumni1 > h2 {
+    font: 900 18px "gilroy";
+    margin-top: 5vmax;
+
+}
+.alumni1 > h4 {
+    font: 600 15px "gilroy";
+    margin-top: 2vmax;
+    line-height: 25px;
+}
+.alumni2 > h2 {
+    font: 900 18px "gilroy";
+    margin-top: 5vmax;
+
+}
+.alumni2 > h4 {
+    font: 600 15px "gilroy";
+    margin-top: 2vmax;
+    line-height: 25px;
+}
+.alumni3 > h2 {
+    font: 900 18px "gilroy";
+    margin-top: 5vmax;
+
+}
+.alumni3 > h4 {
+    font: 600 15px "gilroy";
+    margin-top: 2vmax;
+    line-height: 25px;
+}
+
+
+.luck{
+    position: absolute;
+    top: 70%;
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+
+}
+
+
+.first-part{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    word-spacing: 10px;
+}
+
+.first-part span {
+    color: #00c1a2;
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
+.first-part p {
+    margin-top: 1vmax;
+}
+.first-part input{
+    padding: 1vmax 1.5vmax;
+}
+.second-part{
+    width: 70%;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    align-items: center;
+
+}
+.second-part ul{
+    margin-top: 2vmax;
+}
+
+.second-part ul li {
+    margin: 1vmax 0;
+    cursor: pointer;
+}
+
+.foot{
+    width: 100vw;
+    height: 5%;
+    color: whitesmoke;
+    position: absolute;
+    top: 113%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot ul {
+    list-style: none;
+}
+
+
+/* .sidebar{
+    width: 15vw;
+    height: 100vh;
+    background-color: red;
+    position: absolute;
+    z-index: 999999999;
+} */
